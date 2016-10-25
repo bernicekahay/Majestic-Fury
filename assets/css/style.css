@@ -10,7 +10,8 @@
 /*Things to do:
 1. how to make this fade without the color change
 2. make the nav titles glow depending on which section you are in
-3. change color scheme*/
+3. change color scheme
+4. using vw is a new unit of lenghth which is good for the viewport*/
 
 body, html {
     margin: 0 auto;
@@ -78,7 +79,7 @@ li a:hover {
 
 #background-video { 
     width: 100%;
-    height: auto;
+    height: 70%;
     -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeIn 2s; /* Firefox < 16 */
         -ms-animation: fadeIn 2s; /* Internet Explorer */
@@ -93,20 +94,19 @@ li a:hover {
     height: 23%;
     text-align: center;
     color: white;
-    font-size: 60px;
 }
 
 #home-title {
+    font-size: 5.2vw;
     position: relative;
     top: 20%;
     transform: translateY(-50%);
 }
 
 #type-text {
-    width: 100%;
     position: relative;
-    font-size: 20px;
-    top: 35px;
+    font-size: 2vw;
+    top: 4vw;
 }
 
 #campaign {
@@ -235,6 +235,10 @@ li a:hover {
 
 /**Media Queries*/
 @media screen and (max-width : 680px) {
+
+    #title-bar {
+        height: 10%;
+    }
 
     .navbar-element {
         display: none;
