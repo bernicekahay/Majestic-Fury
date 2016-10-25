@@ -1,0 +1,225 @@
+
+@import url('http://fonts.googleapis.com/css?family=Proza+Libre');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Corsiva');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
+@import url('https://fonts.googleapis.com/css?family=Nova+Flat');
+
+
+/*Things to do:
+1. how to make this fade without the color change
+2. make the nav titles glow depending on which section you are in
+3. change color scheme*/
+
+body, html {
+    margin: 0 auto;
+    max-height: 600px;
+    min-width: 1040px;
+    font-family: Ruslan Display;
+}
+
+/*Borders: to round the corners of a border, you change the border radius
+you have to say the border style first*/
+/* The hashtag is for id's (things that won't get repeated as often.) The . is for class.) */
+
+ul {
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: white;
+    z-index: 9999;
+    box-shadow: 0.5px 0.5px #302e2e;
+}
+
+#logo {
+    float: left;
+    font-size: 16px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    z-index: 999;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    font-size: 12px;
+    font-family: Proza Libre;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    z-index: 999;
+}
+
+li a:hover {
+    cursor: hand;
+    color: #fb594c;
+}
+
+#background-video {    
+    width: 100%;
+    height: 100%;
+    -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeIn 2s; /* Firefox < 16 */
+        -ms-animation: fadeIn 2s; /* Internet Explorer */
+         -o-animation: fadeIn 2s; /* Opera < 12.1 */
+            animation: fadeIn 2s;
+}
+
+#title-bar {
+    top: -2%;
+    background-color: rgba(48, 46, 46, 1);
+    position: relative;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+#home-title {
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+#type-text {
+    position: relative;
+    font-size: 20px;
+    top: 35px;
+}
+
+#campaign {
+    height: 790px;
+    text-align: center;
+}
+
+#campaign-title {
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    color: #302e2e;
+}
+
+#campaign-description {
+    padding-top: 20px;
+    color: #302e2e;
+    font-family: Proza Libre;
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#bestiary {
+    background-color: #302e2e;
+    height: 820px;
+}
+
+#bestiary-title {
+    padding-top: 140px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    font-size: 50px;
+    color: white;
+    z-index: 900;
+}
+
+#body-container {
+    position: relative;
+    height: 460px;
+}
+
+.row-of-beasts {
+    margin: 0 auto;
+    width: 1040px;
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.beast {
+    position: relative;
+    height: 137px;
+    width: 137px;
+    float: left;
+    margin-left: 1%;
+}
+
+.beast img {
+    width: 100%;
+    height: 100%;
+}
+
+.beast img:hover {
+    cursor: hand;
+}
+
+#overlay {
+    width: 137px;
+    height: 137px;
+    position: absolute;
+    background: rgba(0,0,0,.75);
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;}
+
+.beast:hover #overlay {
+    opacity: 1;
+}
+
+#word { 
+    margin-top: 60px;
+    font-family: Nova Flat;
+    font-weight: 900;
+    color: rgba(255,255,255,.85);
+    font-size: 20px;
+}
+
+.beast-title {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-family: Proza Libre;
+}
+
+#third-row {
+    margin: auto;
+    width: 730px;
+}
+
+#affinity {
+    height: 790px;
+}
+
+#affinity-title {
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    color: #302e2e;
+}
+
+#affinity-description {
+    padding-top: 20px;
+    color: #302e2e;
+    font-family: Proza Libre;
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 16px;
+    line-height: 40px;
+}
