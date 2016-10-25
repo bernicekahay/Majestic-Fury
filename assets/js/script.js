@@ -17,7 +17,8 @@ function scroll(href) {
 	$('html, body').animate({ scrollTop: $(href).offset().top});
 	return false;
 }
-    
+
+/**Scrolls keeping track of the orange underline for the navbar.*/
 var scroll_pos = 0;
 $(document).scroll(function() { 
  	scroll_pos = $(this).scrollTop();
