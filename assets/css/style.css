@@ -112,7 +112,7 @@ li a:hover {
 #campaign {
     position: relative;
     background-color: #B55035;
-    height: 790px;
+    height: auto;
     text-align: center;
     color: white;
 }
@@ -132,11 +132,12 @@ li a:hover {
     width: 50%;
     font-size: 16px;
     line-height: 40px;
+    padding-bottom: 30px;
 }
 
 #bestiary {
     background-color: #21272B;
-    height: 820px;
+    height: 800px;
 }
 
 #bestiary-title {
@@ -151,7 +152,6 @@ li a:hover {
 
 #body-container {
     position: relative;
-    height: 460px;
 }
 
 .row-of-beasts {
@@ -198,6 +198,7 @@ li a:hover {
 }
 
 .beast-title {
+    background-color: red;
     margin-top: 5px;
     font-size: 12px;
     text-align: center;
