@@ -238,14 +238,6 @@ li a:hover {
 /**Media Queries if it is less than 680*/
 @media screen and (max-width : 800px) {
 
-/*    .row-of-beasts {
-    margin: 0 auto;
-    width: 1040px;
-    height: 100px;
-    padding-top: 25px;
-    padding-bottom: 40px;
-}*/
-
     #title-bar {
         height: 12%;
     }
@@ -272,6 +264,11 @@ li a:hover {
 
     .beast {
         padding-top: 30px;
+    }
+
+    .beast:active #overlay {
+    opacity: 1;
+    cursor: hand;
     }
 }
 
