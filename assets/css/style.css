@@ -238,6 +238,14 @@ li a:hover {
 /**Media Queries if it is less than 680*/
 @media screen and (max-width : 800px) {
 
+/*    .row-of-beasts {
+    margin: 0 auto;
+    width: 1040px;
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}*/
+
     #title-bar {
         height: 12%;
     }
@@ -251,7 +259,7 @@ li a:hover {
     }
 
     #bestiary {
-        height: 230%;
+        height: 280%;
     }
 
     .row-of-beasts {       
@@ -260,6 +268,10 @@ li a:hover {
 
     #third-row {
         width: 300px;
+    }
+
+    .beast {
+        padding-top: 30px;
     }
 }
 
