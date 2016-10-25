@@ -11,7 +11,9 @@
 1. how to make this fade without the color change
 2. make the nav titles glow depending on which section you are in
 3. change color scheme
-4. using vw is a new unit of lenghth which is good for the viewport*/
+4. using vw is a new unit of lenghth which is good for the viewport
+5. fix navbar
+6. resize the beasts*/
 
 body, html {
     margin: 0 auto;
@@ -29,6 +31,17 @@ you have to say the border style first*/
     border-bottom-style: solid;
 }
 
+#logo {
+    float: left;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    z-index: 999;
+    color: white;
+}
+
 .icon {
     display: none;
 }
@@ -44,17 +57,6 @@ ul {
     box-shadow: 0.5px 0.5px #302e2e;
 }
 
-#logo {
-    float: left;
-    font-size: 16px;
-    display: block;
-    text-align: center;
-    padding: 12px 16px;
-    text-decoration: none;
-    z-index: 999;
-    color: white;
-}
-
 li {
     float: right;
 }
@@ -64,7 +66,7 @@ li a {
     margin-right: 5px;
     font-size: 12px;
     font-family: Proza Libre;
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 12px 16px;
@@ -246,6 +248,18 @@ li a:hover {
 
     .icon {
         display: inline-block;
+    }
+
+    #bestiary {
+        height: 230%;
+    }
+
+    .row-of-beasts {       
+        width: 300px;
+    }
+
+    #third-row {
+        width: 300px;
     }
 }
 
