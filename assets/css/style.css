@@ -233,11 +233,11 @@ li a:hover {
     line-height: 40px;
 }
 
-/**Media Queries*/
-@media screen and (max-width : 680px) {
+/**Media Queries if it is less than 680*/
+@media screen and (max-width : 800px) {
 
     #title-bar {
-        height: 10%;
+        height: 12%;
     }
 
     .navbar-element {
@@ -250,7 +250,7 @@ li a:hover {
 }
 
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
     .navbar.responsive {
         position: relative;
     }
