@@ -15,8 +15,13 @@ function scroll(href) {
 // var scroll_pos = 0;
 // $(document).scroll(function() { 
 //  	scroll_pos = $(this).scrollTop();
-//     if ((scroll_pos > 300) && (scroll_pos < 400)) {
-//     	$("#bestiary").css('background-color', '#7ea3e7');
+//     if (scroll_pos > 200) {
+//     	$("ul").css('background-color', '#302e2e');
+//     	$("li a").css('color', 'white');
+//     } else {
+//      	$("ul").css('background-color', '#ffff');
+//     	$("li a").css('color', '#302e2e');
+//       	$("#logo").css('color', '#302e2e');
 //     }
 //  });
 

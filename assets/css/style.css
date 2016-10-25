@@ -29,7 +29,7 @@ ul {
     padding: 0;
     width: 100%;
     list-style-type: none;
-    background-color: white;
+    background-color: #384b54;
     z-index: 9999;
     box-shadow: 0.5px 0.5px #302e2e;
 }
@@ -38,11 +38,11 @@ ul {
     float: left;
     font-size: 16px;
     display: block;
-    color: black;
     text-align: center;
     padding: 12px 16px;
     text-decoration: none;
     z-index: 999;
+    color: white;
 }
 
 li {
@@ -53,7 +53,7 @@ li a {
     font-size: 12px;
     font-family: Proza Libre;
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 12px 16px;
     text-decoration: none;
@@ -76,8 +76,7 @@ li a:hover {
 }
 
 #title-bar {
-    top: -2%;
-    background-color: rgba(48, 46, 46, 1);
+    background-color: #0B1E2E;
     position: relative;
     width: 100%;
     height: 20%;
@@ -99,8 +98,11 @@ li a:hover {
 }
 
 #campaign {
+    position: relative;
+    background-color: #B55035;
     height: 790px;
     text-align: center;
+    color: white;
 }
 
 #campaign-title {
@@ -108,12 +110,10 @@ li a:hover {
     text-align: center;
     position: relative;
     font-size: 50px;
-    color: #302e2e;
 }
 
 #campaign-description {
     padding-top: 20px;
-    color: #302e2e;
     font-family: Proza Libre;
     position: relative;
     margin: 0 auto;
@@ -123,7 +123,7 @@ li a:hover {
 }
 
 #bestiary {
-    background-color: #302e2e;
+    background-color: #21272B;
     height: 820px;
 }
 
@@ -163,10 +163,6 @@ li a:hover {
     height: 100%;
 }
 
-.beast img:hover {
-    cursor: hand;
-}
-
 #overlay {
     width: 137px;
     height: 137px;
@@ -178,6 +174,7 @@ li a:hover {
 
 .beast:hover #overlay {
     opacity: 1;
+    cursor: hand;
 }
 
 #word { 
@@ -202,7 +199,9 @@ li a:hover {
 }
 
 #affinity {
-    height: 790px;
+    color: white;
+    background-color: #6389A6;
+    height: 900px;
 }
 
 #affinity-title {
@@ -210,12 +209,10 @@ li a:hover {
     text-align: center;
     position: relative;
     font-size: 50px;
-    color: #302e2e;
 }
 
 #affinity-description {
     padding-top: 20px;
-    color: #302e2e;
     font-family: Proza Libre;
     position: relative;
     margin: 0 auto;
