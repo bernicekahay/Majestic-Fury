@@ -23,6 +23,13 @@ body, html {
 you have to say the border style first*/
 /* The hashtag is for id's (things that won't get repeated as often.) The . is for class.) */
 
+.navbar-element {
+    padding-bottom: 4px;
+    border-bottom-width: 2px;
+    border-bottom-color: #fb594c;
+    border-bottom-style: solid;
+}
+
 ul {
     position: fixed;
     margin: 0 auto;
@@ -50,6 +57,8 @@ li {
 }
 
 li a {
+    width: 100px;
+    margin-right: 5px;
     font-size: 12px;
     font-family: Proza Libre;
     display: block;
@@ -79,7 +88,7 @@ li a:hover {
     background-color: #0B1E2E;
     position: relative;
     width: 100%;
-    height: 20%;
+    height: 23%;
     text-align: center;
     color: white;
     font-size: 60px;

@@ -5,6 +5,12 @@ wow = new WOW({
 });
 wow.init();
 
+$("#h").css('border-bottom-style', 'hidden');
+$("#camp").css('border-bottom-style', 'hidden');
+$("#affin").css('border-bottom-style', 'hidden');
+$("#best").css('border-bottom-style', 'hidden');
+
+
 /**Scrolls down to the category. False prevents it from flashing**/
 function scroll(href) {
 	href = $(this).attr("href");
@@ -12,18 +18,29 @@ function scroll(href) {
 	return false;
 }
     
-// var scroll_pos = 0;
-// $(document).scroll(function() { 
-//  	scroll_pos = $(this).scrollTop();
-//     if (scroll_pos > 200) {
-//     	$("ul").css('background-color', '#302e2e');
-//     	$("li a").css('color', 'white');
-//     } else {
-//      	$("ul").css('background-color', '#ffff');
-//     	$("li a").css('color', '#302e2e');
-//       	$("#logo").css('color', '#302e2e');
-//     }
-//  });
+var scroll_pos = 0;
+$(document).scroll(function() { 
+ 	scroll_pos = $(this).scrollTop();
+    if ((scroll_pos > 200) && (scroll_pos < 1200)) {
+		$("#camp").css('border-bottom-style', 'solid');
+		$("#affin").css('border-bottom-style', 'hidden');
+		$("#best").css('border-bottom-style', 'hidden');
+    } 
+    else if ((scroll_pos > 1201) && (scroll_pos < 2000)) {
+    	$("#camp").css('border-bottom-style', 'hidden');
+		$("#affin").css('border-bottom-style', 'hidden');
+		$("#best").css('border-bottom-style', 'solid');
+	}
+	else if (scroll_pos > 2001) {
+		$("#camp").css('border-bottom-style', 'hidden');
+		$("#affin").css('border-bottom-style', 'solid');
+		$("#best").css('border-bottom-style', 'hidden');
+	} else {
+		$("#camp").css('border-bottom-style', 'hidden');
+		$("#affin").css('border-bottom-style', 'hidden');
+		$("#best").css('border-bottom-style', 'hidden');
+    }
+ });
 
 
 $("ul").on("click", "a", scroll);
