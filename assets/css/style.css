@@ -212,6 +212,7 @@ li a:hover {
 }
 
 #affinity-description {
+    text-align: center;
     padding-top: 20px;
     font-family: Proza Libre;
     position: relative;
