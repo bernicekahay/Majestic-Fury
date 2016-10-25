@@ -30,6 +30,10 @@ you have to say the border style first*/
     border-bottom-style: solid;
 }
 
+.icon {
+    display: none;
+}
+
 ul {
     position: fixed;
     margin: 0 auto;
@@ -235,8 +239,20 @@ li a:hover {
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
-    #background-video {
+
+    .navbar-element {
+        display: none;
+    }
+
+    .icon {
+        display: inline-block;
+    }
+
+
+/*    #background-video {
         width: 50%;
-        height: 50%;
+        height: 50%;*/
     }
 }
+
+/**I need the navbar to collapse*/
