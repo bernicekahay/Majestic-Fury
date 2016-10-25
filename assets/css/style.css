@@ -19,6 +19,15 @@ body, html {
     font-family: Ruslan Display;
 }
 
+/**If the screen is less than 700 pixels wide.*/
+@media (max-width: 767px) {
+    #background-video {
+        width: 50%;
+        height: 50%;
+    }
+
+}
+
 /*Borders: to round the corners of a border, you change the border radius
 you have to say the border style first*/
 /* The hashtag is for id's (things that won't get repeated as often.) The . is for class.) */
