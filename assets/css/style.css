@@ -251,8 +251,9 @@ li a:hover {
     }
 
     #bestiary {
-        height: 300%;
-    }
+        height: 2000px;
+/*        height: 300%;
+*/    }
 
     .row-of-beasts {       
         width: 300px;
