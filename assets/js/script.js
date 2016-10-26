@@ -2,12 +2,6 @@ $(document).ready(function() {
 
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
-
-wow = new WOW({
-	mobile: false
-});
-wow.init();
-
 $("#h").css('border-bottom-style', 'hidden');
 $("#camp").css('border-bottom-style', 'hidden');
 $("#affin").css('border-bottom-style', 'hidden');
@@ -59,7 +53,7 @@ $(document).scroll(function() {
     }
  });
 
-
+/**Scrolls down to category when clicked.**/
 $("ul").on("click", "a", scroll);
 
 })
