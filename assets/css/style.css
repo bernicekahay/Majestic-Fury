@@ -9,11 +9,9 @@
 
 /*Things to do:
 1. how to make this fade without the color change
-2. make the nav titles glow depending on which section you are in
-3. change color scheme
 4. using vw is a new unit of lenghth which is good for the viewport
-5. fix navbar
-6. resize the beasts*/
+5. fix navbar, the underline isn't right when in ios mode
+6. css hover doesn't work on ios devices. use hover jquery instead*/
 
 body, html {
     margin: 0 auto;
@@ -140,6 +138,7 @@ li a:hover {
 #bestiary {
     background-color: #21272B;
     height: 800px;
+    color: white;
 }
 
 #bestiary-title {
@@ -148,9 +147,25 @@ li a:hover {
     margin: 0 auto;
     position: relative;
     font-size: 50px;
-    color: white;
     z-index: 900;
 }
+
+#hover-instruction {
+    padding-top: 50px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-family: Proza Libre;
+    font-size: 12px;
+    -webkit-animation: guide-bounce 0.6s alternate infinite;
+}
+
+@-webkit-keyframes guide-bounce /*Safari and Chrome*/
+{
+from {-webkit-transform: translateY(0px);}
+to {-webkit-transform: translateY(-10px);}
+}
+
 
 #body-container {
     position: relative;
@@ -186,10 +201,10 @@ li a:hover {
     opacity: 0;
     -webkit-transition: opacity .25s ease;}
 
-/*.beast:hover #overlay {
+.beast:hover #overlay {
     opacity: 1;
     cursor: hand;
-}*/
+}
 
 #word { 
     margin-top: 60px;
