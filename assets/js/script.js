@@ -6,6 +6,8 @@ $("#h").css('border-bottom-style', 'hidden');
 $("#camp").css('border-bottom-style', 'hidden');
 $("#affin").css('border-bottom-style', 'hidden');
 $("#best").css('border-bottom-style', 'hidden');
+$("#m").css('border-bottom-style', 'hidden');
+
 
 
 /**Hover function for ios*/
@@ -33,17 +35,27 @@ $(document).scroll(function() {
 			$("#camp").css('border-bottom-style', 'solid');
 			$("#affin").css('border-bottom-style', 'hidden');
 			$("#best").css('border-bottom-style', 'hidden');
+			$("#m").css('border-bottom-style', 'hidden');
     	} 
     	else if ((scroll_pos > 1201) && (scroll_pos < 2000)) {
     		$("#camp").css('border-bottom-style', 'hidden');
 			$("#affin").css('border-bottom-style', 'hidden');
 			$("#best").css('border-bottom-style', 'solid');
+			$("#m").css('border-bottom-style', 'hidden');
 		}
-		else if (scroll_pos > 2001) {
+		else if ((scroll_pos > 2001) && (scroll_pos < 2800)) {
 			$("#camp").css('border-bottom-style', 'hidden');
 			$("#affin").css('border-bottom-style', 'solid');
 			$("#best").css('border-bottom-style', 'hidden');
-		} else {
+			$("#m").css('border-bottom-style', 'hidden');
+		}
+		else if (scroll_pos > 2801) {
+			$("#camp").css('border-bottom-style', 'hidden');
+			$("#affin").css('border-bottom-style', 'hidden');
+			$("#best").css('border-bottom-style', 'hidden');
+			$("#m").css('border-bottom-style', 'solid');
+		}
+		else {
 			$("#camp").css('border-bottom-style', 'hidden');
 			$("#affin").css('border-bottom-style', 'hidden');
 			$("#best").css('border-bottom-style', 'hidden');

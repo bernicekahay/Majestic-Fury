@@ -146,7 +146,7 @@ li a:hover {
 }
 
 #bestiary-title {
-    padding-top: 140px;
+    padding-top: 100px;
     text-align: center;
     margin: 0 auto;
     position: relative;
@@ -259,6 +259,30 @@ to {-webkit-transform: translateY(-10px);}
     padding-bottom: 50px;
 }
 
+#map {
+    color: #21272B;
+    background-color: #f3f2f2;
+}
+
+#map-title {
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+    font-size: 5.2vw;
+    padding-bottom: 10px;
+}
+
+#map-container {
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    padding-bottom: 50px;
+}
+
+#map-container img {
+    width: 100%;
+}
+
 /**Media Queries if it is less than 680*/
 @media screen and (max-width : 800px) {
 
@@ -294,8 +318,9 @@ to {-webkit-transform: translateY(-10px);}
         padding-top: 30px;
     }
 
-    .beast:active #overlay {
-    opacity: 1;
+    #map-container {
+        width: 80%;
+        height: 60%;
     }
 }
 
