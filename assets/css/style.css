@@ -151,7 +151,7 @@ li a:hover {
 }
 
 #hover-instruction {
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -175,7 +175,7 @@ to {-webkit-transform: translateY(-10px);}
     margin: 0 auto;
     width: 1040px;
     height: 100px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 
