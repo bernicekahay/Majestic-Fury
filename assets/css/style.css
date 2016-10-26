@@ -186,10 +186,10 @@ li a:hover {
     opacity: 0;
     -webkit-transition: opacity .25s ease;}
 
-.beast:hover #overlay {
+/*.beast:hover #overlay {
     opacity: 1;
     cursor: hand;
-}
+}*/
 
 #word { 
     margin-top: 60px;
@@ -252,8 +252,7 @@ li a:hover {
 
     #bestiary {
         height: 2000px;
-/*        height: 300%;
-*/    }
+    }
 
     .row-of-beasts {       
         width: 300px;
@@ -269,7 +268,6 @@ li a:hover {
 
     .beast:active #overlay {
     opacity: 1;
-    cursor: hand;
     }
 }
 

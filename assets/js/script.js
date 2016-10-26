@@ -11,6 +11,15 @@ $("#affin").css('border-bottom-style', 'hidden');
 $("#best").css('border-bottom-style', 'hidden');
 
 
+/**Hover function for ios*/
+ $(".beast").hover(function(){
+ 	var race = $(this).attr('id');
+ 	$('#' + race + ' #overlay').css('opacity', '1');},
+ 	function() {
+ 	var race = $(this).attr('id');
+ 	$('#' + race + ' #overlay').css('opacity', '0');
+ });
+
 /**Scrolls down to the category. False prevents it from flashing**/
 function scroll(href) {
 	href = $(this).attr("href");
