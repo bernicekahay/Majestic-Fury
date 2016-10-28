@@ -12,7 +12,8 @@
 2. using vw is a new unit of lenghth which is good for the viewport
 3. css hover doesn't work on ios devices. use hover jquery instead
 4. wow needs doctype html header apparently
-5. media queries are things used for when a max or min device width is hit*/
+5. media queries are things used for when a max or min device width is hit
+6. meta properties are used for facebook thumbnails*/
 
 body, html {
     overflow: scroll;
